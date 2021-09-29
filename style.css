@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(#3a3d87, #000 );
+  font-family: 'Poppins', sans-serif;
+}
+
+.form {
+  position: relative;
+  padding: 40px;
+  box-sizing: border-box;
+  min-width: 600px;
+  background: #3a3d87;
+  border-radius: 8px;
+  box-shadow: 0 60px 50px rgba(0,0,0,0.3);
+}
+
+.form h2 {
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 2em;
+  color: #fff;
+}
+
+.form .inputBox {
+  position: relative;
+  margin: 40px 0 20px;
+  width: 100%;
+}
+
+.form .inputBox input {
+  position: absolute;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+  outline: none;
+  padding: 10px 0;
+  width: 100%;
+  color: #fff;
+  font-size: 1.2em;
+  transition: 0.5s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form .inputBox.active input {
+  border-bottom: 2px solid rgb(255, 68, 0);
+}
+
+.form .inputBox label {
+  position: relative;
+  font-size: 1.2em;
+  color: #fff;
+  padding: 10px 0;
+  display: inline-block;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.form .inputBox.active label {
+  color:rgb(255, 68, 0);
+  transform: translateY(-30px);
+}
+
+.form input[type="submit"] {
+  background: #fff ;
+  color: #fe4400;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  margin: 10px 0 0;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: 0.5s;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.form input[type="submit"]:hover {
+  background: #fe4400;
+  color: #fff;   
+}

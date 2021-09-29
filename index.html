@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Form | Move Placeholder Text on Focus</title>
+</head>
+<body>
+  <div class="form">
+    <h2>Inscreva-se para receber as últimas novidades</h2>
+    <div class="inputBox">
+      <input type="text" name="">
+      <label for="">Digite o seu nome</label>
+    </div>
+    <div class="inputBox">
+      <input type="email" name="">
+      <label for="">Digite o seu melhor e-mail</label>
+    </div>
+    <input type="submit" value="Subscribe">
+  </div>
+  
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  
+  <script type="text/javascript">
+    $('input').focus(function() {
+      $(this).parent().addClass('active');
+      $('input').focusout(function(){
+        if($(this).val() == ''){
+          $(this).parent().removeClass('active');
+        }
+        else {
+          $(this).parent().addClass('active');
+        }
+      })
+    })  
+  </script>
+</body>
+</html>
